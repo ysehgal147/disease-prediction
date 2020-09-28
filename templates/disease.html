@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="{{url_for('predict')}}" > <!--action="{{url_for('predict')}}" -->
+        <div class="form-group">
+          <label for="formGroupExampleInput">Example label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" name="a" placeholder="Example input placeholder">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Another label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" name="b" placeholder="Another input placeholder">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Another label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput3" name="c" placeholder="Another input placeholder">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Another label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput4" name="d" placeholder="Another input placeholder">
+        </div> <div class="form-group">
+          <label for="formGroupExampleInput2">Another label</label>
+          <input type="text" class="form-control" id="formGroupExampleInput5" name="e" placeholder="Another input placeholder">
+        </div>
+        <input type="submit" value="submit">
+      </form>
+      <br><h4><b>{{pred}}</b></h4>
+</body>
+</html>
